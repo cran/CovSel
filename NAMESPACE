@@ -1,0 +1,2 @@
+export(cov.sel)
+S3method(summary, cov.sel)
