@@ -27,12 +27,12 @@ bwlist<-vector("list", 3)
 for(i in 1:3){
 	f1 <- as.formula(paste(reslist[[i]], paste(paste(covars), collapse= "+")))
 	bw<-npregbw(f1,data=datlist[[i]], ...)
-	Xfac<-names(which(bw[[25]]))[which((thrs-bw[[1]][which(bw[[25]])])>0)]
-	Xord<-names(which(bw[[26]]))[which(bw[[1]][which(bw[[26]])]<thro)]
-	Xcon<-names(which(bw[[24]]))[which(bw[[1]][which(bw[[24]])]<thrc)]
+	Xfac<-names(which(bw$iuno))[which((thrs-bw$bw[which(bw$iuno)])>0)]
+	Xord<-names(which(bw$iord))[which(bw$bw[which(bw$iord)]<thro)]
+	Xcon<-names(which(bw$icon))[which(bw$bw[which(bw$icon)]<thrc)]
 	Xs<-sort(unique(c(Xfac,Xord,Xcon,scope)))
 	Xfac<-sort(unique(c(Xfac,fac[match(scope,fac)[is.na(match(scope,fac))==FALSE]])))
-	bws<-bw[[1]][match(Xs,bw[[27]])]
+	bws<-bw$bw[match(Xs,bw$xnames)]
 	covlist[[i]]<-Xs
 	bwlist[[i]]<-bws
 	if(i==1){if(length(Xs)==0){ covlist[[3]]<-covlist[[2]]<-covlist[[1]]
@@ -62,13 +62,13 @@ for(i in 1:4){
 	f1 <- as.formula(paste(reslist[[i]], paste(paste(covars), collapse= "+")))
 	## creating npregbw object for control
 	bw<-npregbw(f1,data=datlist[[i]], ...)
-	Xfac<-names(which(bw[[25]]))[which((thrs-bw[[1]][which(bw[[25]])])>0)]
-	Xord<-names(which(bw[[26]]))[which(bw[[1]][which(bw[[26]])]<thro)]
-	Xcon<-names(which(bw[[24]]))[which(bw[[1]][which(bw[[24]])]<thrc)]
+	Xfac<-names(which(bw$iuno))[which((thrs-bw$bw[which(bw$iuno)])>0)]
+	Xord<-names(which(bw$iord))[which(bw$bw[which(bw$iord)]<thro)]
+	Xcon<-names(which(bw$icon))[which(bw$bw[which(bw$icon)]<thrc)]
 	Xs<-sort(unique(c(Xfac,Xord,Xcon,scope)))
 	Xfac<-sort(unique(c(Xfac,fac[match(scope,fac)[is.na(match(scope,fac))==FALSE]])))
-	bws<-bw[[1]][match(Xs,bw[[27]])]
-	covlist[[i]]<-Xs
+	bws<-bw$bw[match(Xs,bw$xnames)]
+  covlist[[i]]<-Xs
 	bwlist[[i]]<-bws
 	if(i==2 || i==4){
 		covars<-covar
@@ -108,13 +108,13 @@ bwlist1<-vector("list", 3)
 for(i in 1:3){
 	f1 <- as.formula(paste(reslist1[[i]], paste(paste(covars), collapse= "+")))
 	bw<-npregbw(f1,data=datlist1[[i]], ...)
-	Xfac<-names(which(bw[[25]]))[which((thrs-bw[[1]][which(bw[[25]])])>0)]
-	Xord<-names(which(bw[[26]]))[which(bw[[1]][which(bw[[26]])]<thro)]
-	Xcon<-names(which(bw[[24]]))[which(bw[[1]][which(bw[[24]])]<thrc)]
+	Xfac<-names(which(bw$iuno))[which((thrs-bw$bw[which(bw$iuno)])>0)]
+	Xord<-names(which(bw$iord))[which(bw$bw[which(bw$iord)]<thro)]
+	Xcon<-names(which(bw$icon))[which(bw$bw[which(bw$icon)]<thrc)]
 	Xs<-sort(unique(c(Xfac,Xord,Xcon,scope)))
 	Xfac<-sort(unique(c(Xfac,fac[match(scope,fac)[is.na(match(scope,fac))==FALSE]])))
-	bws<-bw[[1]][match(Xs,bw[[27]])]
-	covlist1[[i]]<-Xs
+	bws<-bw$bw[match(Xs,bw$xnames)]
+  covlist1[[i]]<-Xs
 	bwlist1[[i]]<-bws
 	if(i==1){if(length(Xs)==0){ covlist1[[3]]<-covlist1[[2]]<-covlist1[[1]]
 						bwlist1[[3]]<-bwlist1[[2]]<-bwlist1[[1]]		
@@ -138,13 +138,13 @@ for(i in 1:4){
 	f1 <- as.formula(paste(reslist2[[i]], paste(paste(covars), collapse= "+")))
 	## creating npregbw object for control
 	bw<-npregbw(f1,data=datlist2[[i]], ...)
-	Xfac<-names(which(bw[[25]]))[which((thrs-bw[[1]][which(bw[[25]])])>0)]
-	Xord<-names(which(bw[[26]]))[which(bw[[1]][which(bw[[26]])]<thro)]
-	Xcon<-names(which(bw[[24]]))[which(bw[[1]][which(bw[[24]])]<thrc)]
+	Xfac<-names(which(bw$iuno))[which((thrs-bw$bw[which(bw$iuno)])>0)]
+	Xord<-names(which(bw$iord))[which(bw$bw[which(bw$iord)]<thro)]
+	Xcon<-names(which(bw$icon))[which(bw$bw[which(bw$icon)]<thrc)]
 	Xs<-sort(unique(c(Xfac,Xord,Xcon,scope)))
 	Xfac<-sort(unique(c(Xfac,fac[match(scope,fac)[is.na(match(scope,fac))==FALSE]])))
-	bws<-bw[[1]][match(Xs,bw[[27]])]
-	covlist2[[i]]<-Xs
+	bws<-bw$bw[match(Xs,bw$xnames)]
+  covlist2[[i]]<-Xs
 	bwlist2[[i]]<-bws
 	if(i==2 || i==4){
 		covars<-covar

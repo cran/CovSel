@@ -82,7 +82,7 @@ Variable Selection. \emph{Journal of the Royal
 Statistical Society, Series B 67}. 285-299
 }
 
-\author{ Emma Persson, <emma.persson@stat.umu.se>, Jenny H?ggstr?m, <jenny.haggstrom@stat.umu.se> }
+\author{ Emma Persson, <emma.persson@stat.umu.se>, Jenny Häggström, <jenny.haggstrom@stat.umu.se> }
 \note{ \code{cov.sel} calls the functions \code{dr}, 
 \code{dr.step} and \code{npregbw} so the packages \code{dr} and \code{np} are required.
 }

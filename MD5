@@ -1,12 +1,12 @@
-e1ddd88531402c04912e5b1e23b9a8bc *DESCRIPTION
-266b4bab31604b08e50f34cf1cc8f14d *NAMESPACE
+70bd5e4953065c2192ab1ba0f9c1e8b9 *DESCRIPTION
+04fd61457b05c40887be68716924829a *NAMESPACE
 5acec9d6c9e57969481b0bd743f8172f *R/cov.sel.R
-f4431a99d0e652729eb01e636b817b49 *R/cov.sel.np.R
+2a571313bbf73884fbdcc2c9e93b8675 *R/cov.sel.np.R
 27c42774e112e5f59524ad9c29f4a2cd *R/summary.cov.sel.R
 01d5e23e6664565ed1e8e82be06f0343 *data/datc.rda
 539c90086b46c6561231dec003c3ad71 *data/datf.rda
 1925af597d3ab963a0686de1a4609567 *data/datfc.rda
-38767d4c3ee70c483ad888861d05525d *man/cov.sel.Rd
+d5ca67ca52aec3d982670ec27440402b *man/cov.sel.Rd
 12f552a72b4f43bfe1b7682cd78c8ff1 *man/cov.sel.np.Rd
 9889c47f77d66d4c031b6a252db961e2 *man/datc.Rd
 2ab70d65fb63340bed0697697ba3b25f *man/datf.Rd
