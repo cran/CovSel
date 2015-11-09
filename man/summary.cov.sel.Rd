@@ -28,4 +28,4 @@
   \item{Z.0comp }{The complement subset of covariates to \code{Z.0}}
   \item{Z.1comp }{The complement subset of covariates to \code{Z.1}}
 }
-\author{ Emma Persson, <emma.persson@stat.umu.se> }
+\author{ Emma Persson, <emma.persson@umu.se> }

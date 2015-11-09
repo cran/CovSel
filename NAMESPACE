@@ -1,3 +1,4 @@
 export(cov.sel)
-import(MASS, boot, cubature, dr, np)
+import(dr, np, MASS)
+importFrom("stats", "as.formula")
 S3method(summary, cov.sel)

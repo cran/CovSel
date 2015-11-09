@@ -46,7 +46,7 @@ thrs<-thru*maxbwT			}
 
 ## Return Values
 l <- list(X.T = covlist[[1]], Q.0 = covlist[[2]], Q.1 = covlist[[3]],
-  bandwidthsQ.0 = bwlist[[2]], bandwidthsQ.1 = bwlist[[3]], regtype=bw[[2]],bwtype=bw[[10]], covar = covar)
+  bandwidthsQ.0 = bwlist[[2]], bandwidthsQ.1 = bwlist[[3]], regtype=bw$pregtype,bwtype=bw$type, covar = covar)
 class(l) <- "cov.sel"
 invisible(return(l))
 
@@ -92,7 +92,7 @@ for(i in 1:4){
 		
 ## Return Values
 l <- list(X.0 = covlist[[1]], X.1 = covlist[[3]], Z.0 = covlist[[2]], Z.1 = covlist[[4]],
- bandwidthsZ.0 = bwlist[[2]], bandwidthsZ.1 = bwlist[[4]], regtype=bw[[2]],bwtype=bw[[10]], covar = covar)
+ bandwidthsZ.0 = bwlist[[2]], bandwidthsZ.1 = bwlist[[4]], regtype=bw$pregtype,bwtype=bw$type, covar = covar)
 class(l) <- "cov.sel"
 invisible(return(l))
 		
@@ -170,7 +170,7 @@ for(i in 1:4){
 l <- list(X.T = covlist1[[1]], Q.0 = covlist1[[2]], Q.1 = covlist1[[3]],
   X.0 = covlist2[[1]], X.1 = covlist2[[3]], Z.0 = covlist2[[2]], Z.1 = covlist2[[4]],
   bandwidthsQ.0 = bwlist1[[2]], bandwidthsQ.1 = bwlist1[[3]],
-  bandwidthsZ.0 = bwlist2[[2]], bandwidthsZ.1 = bwlist2[[4]], regtype=bw[[2]],bwtype=bw[[10]], covar = covar)
+  bandwidthsZ.0 = bwlist2[[2]], bandwidthsZ.1 = bwlist2[[4]], regtype=bw$pregtype,bwtype=bw$type, covar = covar)
 class(l) <- "cov.sel"
 invisible(return(l))
 	

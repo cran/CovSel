@@ -75,6 +75,8 @@ contributions in Sufficient Dimension Reduction. \emph{The Annals of statistics 
 
 de Luna, X., I. Waernbaum, and T. S. Richardson (2011). Covariate selection for the nonparametric estimation of an average treatment effect. \emph{Biometrika 98}. 861-875
 
+Häggström, J., E. Persson, I. Waernbaum and X. de Luna (2015). An \code{R} Package for Covariate Selection When Estimating Average Causal Effects. \emph{Journal of Statistical Software 68}. 1-20
+
 Hall, P., Q. Li and J.S. Racine (2007). Nonparametric estimation of regression functions in the presence of irrelevant regressors. \emph{The Review of Economics and Statistics, 89}. 784-789
 
 Li, L., R. D. Cook, and C. J. Nachtsheim (2005). Model-free
@@ -82,7 +84,7 @@ Variable Selection. \emph{Journal of the Royal
 Statistical Society, Series B 67}. 285-299
 }
 
-\author{ Emma Persson, <emma.persson@stat.umu.se>, Jenny H�ggstr�m, <jenny.haggstrom@stat.umu.se> }
+\author{ Emma Persson, <emma.persson@umu.se>, Jenny Häggström, <jenny.haggstrom@umu.se> }
 \note{ \code{cov.sel} calls the functions \code{dr}, 
 \code{dr.step} and \code{npregbw} so the packages \code{dr} and \code{np} are required.
 }
