@@ -2,7 +2,7 @@
 \alias{lalonde}
 \docType{data}
 \title{ Real data, Lalonde}
-\description{In order for the code used to create this data frame to work text files available on Dehejia's webpage \url{http://www.nber.org/~rdehejia/data/nswdata2.html} need to be downloaded and stored in the working directory. The data frame consists of 297 treated units from a randomized evaluation of a labor training program, the National Supported Work (NSW) Demonstration, and 314 nonexperimental comparison units drawn from survey datasets.  \cr
+\description{In order for the code used to create this data frame to work text files available on Dehejia's webpage \url{https://users.nber.org/~rdehejia/nswdata2.html} need to be downloaded and stored in the working directory. The data frame consists of 185 treated units from a randomized evaluation of a labor training program, the National Supported Work (NSW) Demonstration, and 429 nonexperimental comparison units drawn from survey datasets.  \cr
 \cr
 \code{treated <- read.table(file = "nswre74_treated.txt")}\cr
 \code{controls <- read.table(file = "cps3_controls.txt")}\cr

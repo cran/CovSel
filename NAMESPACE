@@ -1,4 +1,9 @@
 export(cov.sel)
-import(dr, np, MASS)
-importFrom("stats", "as.formula")
+import(np, MASS)
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "pairs")
+importFrom("stats", "contr.helmert", "cov", "drop1", "formula", "lm",
+               "model.extract", "model.matrix", "na.fail", "na.omit",
+               "pbeta", "pchisq", "pgamma", "residuals", "rnorm", "terms",
+               "update", "var", "as.formula")
 S3method(summary, cov.sel)

@@ -88,7 +88,7 @@ Statistical Society, Series B 67}. 285-299
 \note{ \code{cov.sel} calls the functions \code{dr}, 
 \code{dr.step} and \code{npregbw} so the packages \code{dr} and \code{np} are required.
 }
-\seealso{\code{\link[dr]{dr}}, \code{\link[np]{np}}}
+\seealso{\code{\link[np]{np}}}
 \examples{
 ## Marginal co-ordinate hypothesis test, continuous covariates only
 
